@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 620" role="img" aria-label="Illustration of a clinic desk with a stethoscope and clipboard beneath an arched window">
+  <!-- HERO IMAGE: this is an original illustration. To use a real photograph of your clinic, replace this
+       file with hero.jpg / hero.webp and update the <img> src in index.html. Do not use stock photos as the doctor. -->
+  <path d="M0 620V260A260 260 0 0 1 520 260V620Z" fill="#E8F3EF"/>
+  <path d="M34 620V262A226 226 0 0 1 486 262V620" fill="none" stroke="#2878B5" stroke-opacity=".35" stroke-width="1.5"/>
+  <circle cx="260" cy="206" r="78" fill="#FFFFFF"/>
+  <rect x="250" y="172" width="20" height="68" rx="4" fill="#2878B5"/>
+  <rect x="226" y="196" width="68" height="20" rx="4" fill="#2878B5"/>
+  <!-- clipboard -->
+  <rect x="70" y="384" width="96" height="124" rx="8" fill="#FAF9F6" stroke="#16324F" stroke-width="2"/>
+  <rect x="96" y="374" width="44" height="18" rx="4" fill="#16324F"/>
+  <path d="M88 422h60M88 442h60M88 462h38" stroke="#2878B5" stroke-width="3" stroke-linecap="round"/>
+  <!-- plant -->
+  <g fill="#BBD9CC"><ellipse cx="420" cy="398" rx="11" ry="38" transform="rotate(-18 420 398)"/><ellipse cx="446" cy="404" rx="11" ry="34" transform="rotate(18 446 404)"/><ellipse cx="433" cy="388" rx="10" ry="40"/></g>
+  <path d="M410 440h46l-6 64h-34z" fill="#2878B5"/>
+  <!-- stethoscope -->
+  <g fill="none" stroke="#16324F" stroke-width="6" stroke-linecap="round">
+    <path d="M190 330C190 400 222 428 260 428"/>
+    <path d="M330 330C330 400 298 428 260 428"/>
+    <path d="M260 428C260 484 336 480 336 440"/>
+  </g>
+  <circle cx="190" cy="324" r="8" fill="#16324F"/>
+  <circle cx="330" cy="324" r="8" fill="#16324F"/>
+  <circle cx="336" cy="436" r="22" fill="#2878B5"/>
+  <circle cx="336" cy="436" r="10" fill="#FFFFFF"/>
+  <!-- desk -->
+  <rect x="0" y="500" width="520" height="120" fill="#16324F"/>
+  <rect x="0" y="500" width="520" height="4" fill="#2878B5"/>
+</svg>

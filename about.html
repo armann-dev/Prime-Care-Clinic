@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About | Prime Care Clinic</title>
+  <meta name="description" content="About Prime Care Clinic and Dr. Raja Multani: a neighbourhood clinic offering comprehensive care for all ages.">
+  <meta name="theme-color" content="#16324F">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Prime Care Clinic">
+  <meta property="og:title" content="About | Prime Care Clinic">
+  <meta property="og:description" content="About Prime Care Clinic and Dr. Raja Multani: a neighbourhood clinic offering comprehensive care for all ages.">
+  <!-- SEO: once the site has a domain, add <link rel="canonical" href="https://your-domain/about.html"> and an og:image. -->
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&amp;family=Public+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header" data-header>
+    <div class="container header-inner">
+      <!-- LOGO: replace assets/logo.svg with your own file. -->
+      <a class="brand" href="index.html" aria-label="Prime Care Clinic, home">
+        <img src="assets/logo.svg" alt="" width="44" height="44">
+        <span class="brand-text">
+          <span class="brand-name">Prime Care Clinic</span>
+          <span class="brand-sub">Dr. Raja Multani</span>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+        <span class="sr-only">Menu</span>
+        <span class="nav-toggle__bars" aria-hidden="true"></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary" data-nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" aria-current="page">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a class="btn btn-primary" href="contact.html#appointment">Book Appointment</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="page-head" aria-labelledby="page-title">
+      <div class="container">
+        <h1 id="page-title">Healthcare That Puts People First</h1>
+        <p class="lede">A neighbourhood clinic for every member of the family.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="story-title">
+      <div class="container split">
+        <h2 id="story-title">About the clinic</h2>
+        <div>
+          <p class="lede">Prime Care Clinic offers comprehensive care for all ages, from everyday illnesses to routine check-ups.</p>
+          <p>We are a neighbourhood practice, so we aim to be easy to reach, easy to talk to and clear in our advice. Patients are welcome to bring questions and, where they have them, earlier prescriptions or reports.</p>
+          <p>Our services include general consultation, care for fever, cold and common illnesses, blood pressure and diabetes check-ups, and health check-ups.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--mint" aria-labelledby="principles-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="principles-title">How we aim to care</h2>
+          <p>Three commitments guide how we approach every visit.</p>
+        </div>
+        <div class="principles">
+          <div class="principle">
+            <h3>Listen first</h3>
+            <p>Every consultation begins with your account of what is happening and what worries you.</p>
+          </div>
+          <div class="principle">
+            <h3>Explain clearly</h3>
+            <p>We aim to describe findings and next steps in plain language, so you can ask questions and decide with confidence.</p>
+          </div>
+          <div class="principle">
+            <h3>Care for the whole family</h3>
+            <p>From children to older adults, one clinic can look after everyday health across generations.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="doctor" aria-labelledby="doctor-title">
+      <div class="container doctor">
+        <!-- DOCTOR PORTRAIT: replace assets/doctor-portrait.svg with the doctor's own photo (e.g. doctor-portrait.jpg,
+             4:5 ratio works best) and update src and alt. -->
+        <figure class="portrait">
+          <img src="assets/doctor-portrait.svg" width="400" height="500" alt="Portrait placeholder for Dr. Raja Multani. Replace with the doctor's own photograph.">
+        </figure>
+        <div>
+          <h2 id="doctor-title">Dr. Raja Multani</h2>
+          <p class="doctor__role">Sees patients at Prime Care Clinic</p>
+          <!-- Only add details below that the doctor has verified. Do not publish unverified claims. -->
+          <dl class="facts">
+            <div><dt>Qualifications</dt><dd class="placeholder">To be added by the clinic</dd></div>
+            <div><dt>Medical registration</dt><dd class="placeholder">To be added by the clinic</dd></div>
+            <div><dt>Experience</dt><dd class="placeholder">To be added by the clinic</dd></div>
+            <div><dt>Consults for</dt><dd>General consultation; fever, cold and common illnesses; BP and diabetes check-ups; health check-ups</dd></div>
+          </dl>
+          <p class="doctor__note">Professional details will be published here once supplied and verified by the clinic.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--navy" aria-labelledby="cta-title">
+      <div class="container cta-band">
+        <div>
+          <h2 id="cta-title">Ready to see the doctor?</h2>
+          <p>Send an appointment enquiry with your preferred date, or get in touch with the clinic directly.</p>
+        </div>
+        <div class="cta-band__actions">
+          <a class="btn btn-light" href="contact.html#appointment">Book Appointment</a>
+          <a class="btn btn-outline-light" href="contact.html#contact-details">Contact details</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">
+            <img src="assets/logo-light.svg" alt="" width="52" height="52">
+            <span>Prime Care Clinic</span>
+          </div>
+          <p class="footer-tagline">Comprehensive Care for All Ages</p>
+        </div>
+        <nav aria-label="Footer">
+          <h2>Explore</h2>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html#appointment">Book Appointment</a></li>
+          </ul>
+        </nav>
+        <div class="footer-contact">
+          <h2>Contact</h2>
+          <!-- Contact details are set in script.js (CLINIC_CONFIG). -->
+          <div><span class="placeholder" data-contact="address">Address to be added</span></div>
+          <div><span class="placeholder" data-contact="phone">Phone number to be added</span></div>
+          <div><span class="placeholder" data-contact="whatsapp">WhatsApp number to be added</span></div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>The information on this website is general and is not a substitute for professional medical advice, diagnosis or treatment. In an emergency, contact your local emergency services or go to the nearest hospital.</p>
+        <p>&copy; <span data-year>2026</span> Prime Care Clinic. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

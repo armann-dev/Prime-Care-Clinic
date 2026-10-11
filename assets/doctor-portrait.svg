@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" role="img" aria-label="Portrait placeholder">
+  <!-- DOCTOR PORTRAIT PLACEHOLDER: replace with the doctor's own photograph, e.g. assets/doctor-portrait.jpg,
+       then update the <img> src in about.html. This neutral silhouette is not a photo of the doctor. -->
+  <rect width="400" height="500" fill="#E8F3EF"/>
+  <circle cx="200" cy="190" r="72" fill="#C4DDD3"/>
+  <path d="M60 500v-60c0-70 62-110 140-110s140 40 140 110v60z" fill="#C4DDD3"/>
+  <text x="200" y="468" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#16324F" fill-opacity=".7">Portrait to be added</text>
+</svg>

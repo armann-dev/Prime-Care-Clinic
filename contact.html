@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact & Book Appointment | Prime Care Clinic</title>
+  <meta name="description" content="Send an appointment enquiry to Prime Care Clinic or find the clinic's contact details, opening hours and location.">
+  <meta name="theme-color" content="#16324F">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Prime Care Clinic">
+  <meta property="og:title" content="Contact & Book Appointment | Prime Care Clinic">
+  <meta property="og:description" content="Send an appointment enquiry to Prime Care Clinic or find the clinic's contact details, opening hours and location.">
+  <!-- SEO: once the site has a domain, add <link rel="canonical" href="https://your-domain/contact.html"> and an og:image. -->
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&amp;family=Public+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header" data-header>
+    <div class="container header-inner">
+      <!-- LOGO: replace assets/logo.svg with your own file. -->
+      <a class="brand" href="index.html" aria-label="Prime Care Clinic, home">
+        <img src="assets/logo.svg" alt="" width="44" height="44">
+        <span class="brand-text">
+          <span class="brand-name">Prime Care Clinic</span>
+          <span class="brand-sub">Dr. Raja Multani</span>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+        <span class="sr-only">Menu</span>
+        <span class="nav-toggle__bars" aria-hidden="true"></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary" data-nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+          <li><a class="btn btn-primary" href="contact.html#appointment">Book Appointment</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="page-head" aria-labelledby="page-title">
+      <div class="container">
+        <h1 id="page-title">Contact &amp; Appointments</h1>
+        <p class="lede">Send an appointment enquiry or find how to reach the clinic.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-layout">
+
+        <div class="form-panel" id="appointment">
+          <h2>Appointment enquiry</h2>
+          <p>Tell us your preferred date and the clinic will use your phone number to confirm.</p>
+
+          <!--
+            BACKEND CONNECTION POINT
+            This form is validated in the browser only. Nothing is sent anywhere until you connect a real backend.
+            1) Open script.js and set CLINIC_CONFIG.formEndpoint to your server / form-service URL, or
+            2) edit the submitEnquiry() function in script.js to call your own API.
+            Until then, the page tells visitors honestly that the enquiry was NOT sent.
+          -->
+          <form novalidate data-enquiry-form>
+            <div class="field">
+              <label for="name">Full name</label>
+              <input id="name" name="name" type="text" autocomplete="name" maxlength="80" required aria-describedby="name-error">
+              <p class="field-error" id="name-error" aria-live="polite"></p>
+            </div>
+
+            <div class="field">
+              <label for="phone">Phone number</label>
+              <input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" maxlength="20" required aria-describedby="phone-hint phone-error">
+              <p class="field-hint" id="phone-hint">A 10-digit mobile number, with or without +91.</p>
+              <p class="field-error" id="phone-error" aria-live="polite"></p>
+            </div>
+
+            <div class="field">
+              <label for="date">Preferred date</label>
+              <input id="date" name="date" type="date" required aria-describedby="date-error">
+              <p class="field-error" id="date-error" aria-live="polite"></p>
+            </div>
+
+            <div class="field">
+              <label for="message">Message <span class="optional">(optional)</span></label>
+              <textarea id="message" name="message" maxlength="300" aria-describedby="message-hint message-error"></textarea>
+              <p class="field-hint" id="message-hint">Keep it brief, for example the reason for your visit.</p>
+              <p class="field-error" id="message-error" aria-live="polite"></p>
+              <p class="char-count" aria-hidden="true"><span data-char-count>0</span> / 300</p>
+            </div>
+
+            <button class="btn btn-primary" type="submit" data-submit>Send enquiry</button>
+
+            <div class="form-status" tabindex="-1" role="status" aria-live="polite" hidden data-form-status></div>
+            <p class="form-privacy">Please do not include medical history, test results or other sensitive details here. Share those in person with the doctor.</p>
+          </form>
+        </div>
+
+        <aside id="contact-details" aria-labelledby="details-title">
+          <h2 id="details-title" style="font-size:clamp(1.7rem,3vw,2.2rem);margin-bottom:1.5rem">Clinic details</h2>
+          <!-- Edit all details in script.js (CLINIC_CONFIG). Nothing here is invented. -->
+          <dl class="details">
+            <div><dt>Address</dt><dd><address><span class="placeholder" data-contact="address">Address to be added</span></address></dd></div>
+            <div><dt>Phone</dt><dd><span class="placeholder" data-contact="phone">Phone number to be added</span></dd></div>
+            <div><dt>WhatsApp</dt><dd><span class="placeholder" data-contact="whatsapp">WhatsApp number to be added</span></dd></div>
+            <div><dt>Opening hours</dt><dd data-hours><span class="placeholder">Opening hours to be added</span></dd></div>
+          </dl>
+        </aside>
+      </div>
+
+      <div class="container map">
+        <h2 style="font-size:clamp(1.5rem,2.6vw,2rem);margin-bottom:1.25rem">Find the clinic</h2>
+        <!-- GOOGLE MAPS: set CLINIC_CONFIG.mapEmbedUrl in script.js (Google Maps > Share > Embed a map > copy the src URL). -->
+        <div class="map__frame" data-map>
+          <p class="placeholder">The Google Map will appear here once an embed link is added.</p>
+        </div>
+        <p class="map__link" data-map-link-wrap hidden><a href="#" target="_blank" rel="noopener noreferrer" data-map-link>Open in Google Maps</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">
+            <img src="assets/logo-light.svg" alt="" width="52" height="52">
+            <span>Prime Care Clinic</span>
+          </div>
+          <p class="footer-tagline">Comprehensive Care for All Ages</p>
+        </div>
+        <nav aria-label="Footer">
+          <h2>Explore</h2>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html#appointment">Book Appointment</a></li>
+          </ul>
+        </nav>
+        <div class="footer-contact">
+          <h2>Contact</h2>
+          <!-- Contact details are set in script.js (CLINIC_CONFIG). -->
+          <div><span class="placeholder" data-contact="address">Address to be added</span></div>
+          <div><span class="placeholder" data-contact="phone">Phone number to be added</span></div>
+          <div><span class="placeholder" data-contact="whatsapp">WhatsApp number to be added</span></div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>The information on this website is general and is not a substitute for professional medical advice, diagnosis or treatment. In an emergency, contact your local emergency services or go to the nearest hospital.</p>
+        <p>&copy; <span data-year>2026</span> Prime Care Clinic. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
